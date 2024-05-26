@@ -1,0 +1,180 @@
+/* Definindo fontes personalizadas */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/MONTSERRAT-BOLD.TTF') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/MONTSERRAT-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/MONTSERRAT-SEMIBOLD.TTF') format('truetype');
+    font-weight: 600;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.purple-box-container {
+    background: #9B24FE;
+    background-color: #9B24FE;
+    margin: 0px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.purple-box-table {
+    background: #9B24FE;
+    background-color: #9B24FE;
+    width: 100%;
+}
+
+.purple-box-td {
+    border-bottom: 0 none #000000;
+    border-left: 0 none #000000;
+    border-right: 0 none #000000;
+    border-top: 0 none #000000;
+    direction: ltr;
+    font-size: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.purple-box-content {
+    font-size: 0;
+    line-height: 0;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+}
+
+.purple-box-text,
+.purple-box-left,
+.purple-box-right {
+    font-size: 0px;
+    text-align: left;
+    direction: ltr;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.purple-box-text {
+    width: 30%;
+}
+
+.purple-box-left {
+    width: 50%;
+}
+
+.purple-box-right {
+    width: 50%;
+}
+
+.purple-box-text-content,
+.purple-box-left-content {
+    background-color: transparent;
+    border: none;
+    vertical-align: top;
+    padding: 0;
+}
+
+.purple-box-text-div,
+.purple-box-left-div {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    color: #000000;
+    padding: 35px 10px 10px 35px;
+}
+
+.purple-box-main-text,
+.purple-box-sub-text {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.purple-box-main-text {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.purple-box-sub-text {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #ffad01;
+}
+
+/* Aplicando fontes personalizadas ao texto específico */
+.purple-box-main-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.purple-box-sub-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.purple-box-image-placeholder {
+    width: 33%;
+}
+
+.placeholder-cell {
+    background-color: transparent;
+    border: none;
+    vertical-align: top;
+    padding: 0;
+}
+
+.placeholder-height {
+    height: 20px;
+    line-height: 20px;
+}
+
+.purple-box-right-content {
+    background-color: transparent;
+    border: none;
+    vertical-align: top;
+    padding: 0;
+}
+
+.image-table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.image-cell {
+    width: 295px;
+}
+
+.overlapping-image {
+    position: absolute;
+    top: 200px; /* Ajuste conforme necessário para alinhar corretamente */
+    right: 0;
+    /* transform: translateX(-50%); */
+    width: 50%;
+    height: auto;
+    z-index: 10; /* Certifique-se de que a imagem esteja sobreposta */
+}
+.purple-box {
+    background-color: #9B24FE; /* Fundo roxo para a seção de destaque */
+    color: #ffffff;
+    padding: 0px;
+    text-align: left;
+    height : 415px;
+    position: relative; /* Permitir posicionamento absoluto para a imagem */
+}

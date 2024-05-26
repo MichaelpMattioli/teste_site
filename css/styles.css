@@ -1,0 +1,28 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #ffffff; /* Fundo branco para a primeira imagem */
+    text-align: center;
+    /* padding: 20px; */
+}
+.header img {
+    width: 100%;
+    height: auto; /* Imagem responsiva para a primeira imagem */
+}
+.content {
+    background-color: #ffffff; /* Fundo branco para o restante do conteúdo */
+    padding: 20px;
+    text-align: left;
+}
+.footer {
+    background-color: #32343a; /* Fundo cinza escuro para o rodapé */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.footer a {
+    color: #9B24FE;
+    text-decoration: none;
+}

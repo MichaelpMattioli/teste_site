@@ -1,0 +1,133 @@
+.white-box-container {
+    background: #ffffff;
+    background-color: #ffffff;
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+.white-box-table {
+    background: #ffffff;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.white-box-td {
+    border-bottom: 0 none #000000;
+    border-left: 0 none #000000;
+    border-right: 0 none #000000;
+    border-top: 0 none #000000;
+    direction: ltr;
+    font-size: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.white-box-content {
+    font-size: 0px;
+    line-height: 0;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+   
+}
+
+.white-box-text {
+    font-size: 0px;
+    text-align: left;
+    direction: ltr;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.white-box-text-td {
+    background-color: transparent;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    vertical-align: top;
+    padding: 0;
+}
+
+.white-box-text-content {
+    font-size: 0px;
+    padding: 35px 10px 10px 35px;
+    word-break: break-word;
+}
+
+.white-box-text-div {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    color: #000000;
+}
+
+.white-box-text-p {
+    font-family: Arial;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.white-box-text-span {
+    font-size: 26px;
+}
+
+.white-box-text-inner-span {
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+.highlight {
+    color: #ffad01;
+}
+
+.main-text {
+    color: #32343a;
+}
+
+.white-box-placeholder {
+    font-size: 0px;
+    text-align: left;
+    direction: ltr;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.purple-line {
+    border: 0px;
+    border-radius: 6px;
+    height: 5px;
+    align-self: auto;
+    background: #9B24FE;
+    margin: 20px 35px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.icon-description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #32343a;
+    flex-grow: 1;
+    
+    margin: 10px;
+    line-height: 1.4;
+}

@@ -1,0 +1,30 @@
+/* Footer Box */
+.footer-box {
+    background: #ffffff;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    padding: 0px 60px;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-text {
+    /* margin: 0px 50px; */
+    font-size: 18px;
+    color: #8529ff;
+}
+
+.footer-image {
+    max-width: 100px;
+    height: auto;
+}

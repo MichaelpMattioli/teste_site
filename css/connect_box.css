@@ -1,0 +1,56 @@
+/* Connect Box */
+.connect-box {
+    background: #32343a;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.connect-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.connect-left {
+    flex: 1;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    text-align: center; /* Centraliza o texto (se houver) */
+}
+
+.connect-right {
+    flex: 1;
+    text-align: left;
+    /* padding-left: 80px; */
+    /* margin-left: 50px; */
+    
+}
+
+.connect-image {
+    max-width: 200px;
+    margin: 0px 50px;
+    height: auto;
+}
+
+.connect-text {
+    margin: 0px 50px;
+
+    padding: auto;
+}
+
+.connect-text a {
+    font-size: 16px;
+    color: #8529ff;
+    text-decoration: none;
+}
+
+.connect-text-highlight {
+    font-size: 18px;
+    font-size: Bold;
+
+}
+
+.spaced-link {
+    margin-top: 20px; /* Ajuste este valor conforme necessário */
+    display: inline-block; /* Necessário para aplicar a margem superior */
+}

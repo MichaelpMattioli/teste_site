@@ -1,0 +1,158 @@
+.white-box2-container {
+    background: #ffffff;
+    background-color: #ffffff;
+    margin: 0px auto;
+    max-width: 600px;
+}
+
+.white-box2-table {
+    background: #ffffff;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.white-box2-td {
+    border-bottom: 0 none #000000;
+    border-left: 0 none #000000;
+    border-right: 0 none #000000;
+    border-top: 0 none #000000;
+    direction: ltr;
+    font-size: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+.white-box2-content {
+    font-size: 0px;
+    line-height: 0;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    direction: ltr;
+}
+
+.white-box2-text {
+    font-size: 0px;
+    text-align: left;
+    direction: ltr;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.white-box2-text-content {
+    background-color: transparent;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    vertical-align: top;
+    padding: 0px 120px 0px 0px;
+    width: 60%; /* Ajuste a largura conforme necessário */
+}
+
+.white-box2-text-div {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+    color: #000000;
+    padding: 35px 10px 10px 35px;
+}
+
+.white-box2-main-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #32343a;
+}
+
+.white-box2-sub-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    color: #32343a;
+}
+
+.white-box2-image-content {
+    vertical-align: top;
+    padding: 0;
+    width: 50%; /* Ajuste a largura conforme necessário */
+    text-align: right; /* Alinha a imagem à direita */
+}
+
+.imagem-olhos-brilhantes {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    height: auto;
+    max-width: 100%;
+    font-size: 13px;
+    border: 0;
+    border-left: 0 none #000000;
+    border-right: 0 none #000000;
+    border-top: 0 none #000000;
+    border-bottom: 0 none #000000;
+    border-radius: 0;
+    margin-right: 0; /* Remove qualquer margem à direita */
+}
+
+/* CTA Box */
+.cta-box {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font: 24px Arial, sans-serif;
+}
+
+.cta-button {
+    
+    background: #8529ff;
+    color: #ffffff;
+    border: none;
+    padding: 20px 36px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px 0px 0px;
+    /* height: 100px; */
+}
+
+.cta-button:hover {
+    background: #661cc6;
+}
+
+/* Info Box */
+.info-box {
+    background: #ffffff;
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #32343a;
+    text-align: center;
+}
+
+.info-text a {
+    color: #8529ff;
+    text-decoration: none;
+    font-weight: bold; /* Corrigido para aplicar negrito */
+}
+
+.spaced-link {
+    font-size: 20px;
+    margin-bottom: 10px; /* Ajuste este valor conforme necessário */
+    display: inline-block; /* Necessário para aplicar a margem inferior */
+}
+
+
+
+
