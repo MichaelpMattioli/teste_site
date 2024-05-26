@@ -3,118 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect Cogna</title>
+    <title>Email Replicado</title>
     <style>
+        /* Adicione aqui qualquer CSS embutido encontrado no email */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: Ubuntu, Helvetica, Arial, sans-serif;
+            color: #000000;
         }
-        header {
-            background-color: #6a1b9a;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-        }
-        header img {
-            width: 100%;
-            max-width: 800px;
-            display: block;
-            margin: 0 auto;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        .container {
-            padding: 20px;
-            text-align: center;
+        .header {
+            background-color: #8529ff;
+            color: #ffffff;
+            padding: 10px;
         }
         .highlight {
-            background-color: #6a1b9a;
-            color: white;
+            color: #ffad01;
+        }
+        .button {
+            background-color: #8529ff;
+            color: #ffffff;
+            border-radius: 999px;
+            padding: 18px 44px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+        }
+        .footer {
+            background-color: #32343a;
+            color: #ffffff;
             padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .steps {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        .step {
-            background-color: white;
-            border: 2px solid #6a1b9a;
-            border-radius: 8px;
-            padding: 20px;
-            max-width: 600px;
-            width: 100%;
-            text-align: left;
-            display: flex;
-            align-items: center;
-        }
-        .step img {
-            width: 50px;
-            margin-right: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-        }
-        @media (min-width: 600px) {
-            .steps {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .step {
-                width: calc(50% - 40px);
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://via.placeholder.com/800x200" alt="Connect Cogna">
-        <h1>Connect Cogna</h1>
-        <p>A nova plataforma que vai conectar as grandes mentes da família Cogna.</p>
-    </header>
-    <div class="container">
-        <div class="highlight">
-            <p>Afinal, com match de objetivos, podemos ir mais longe!</p>
-        </div>
-        <h2>O que preciso fazer para me conectar?</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Cadastro">
-                <p>Realize seu cadastro, preenchendo os dados sobre o plano de Desenvolvimento Individual (PDI).</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Validação">
-                <p>Validificaremos as pessoas que têm planos iguais ou alinhados aos objetivos da Cogna.</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Identificação">
-                <p>Identificaremos as pessoas que têm planos iguais ou alinhados aos objetivos da Cogna.</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/50" alt="Conexão">
-                <p>Oferecemos meios de interação para que todos possam alcançar esses objetivos juntos.</p>
-            </div>
-        </div>
-        <h2>Viu como é simples?</h2>
+    <div class="header">
+        <p><strong><span class="highlight">A nova plataforma</span> que vai conectar as grandes mentes da família Cogna.</strong></p>
+        <p><strong><span class="highlight">Afinal, com match de objetivos, podemos ir mais longe!</span></strong></p>
     </div>
-    <footer>
-        <p>&copy; 2024 Connect Cogna. Todos os direitos reservados.</p>
-    </footer>
+
+    <div>
+        <p>"O que preciso fazer para me conectar?"</p>
+        <p>Basta realizar o <strong>cadastro</strong> e compartilhar alguns dados através de um <strong>quiz sobre seu Plano de Desenvolvimento Individual (PDI)</strong>.</p>
+        <p>Nossa plataforma <strong>vai identificar as pessoas que têm planos iguais ou similares aos seus</strong>, considerando pessoas de <strong>todo o ecossistema Cogna</strong>.</p>
+        <p>Depois da busca, ela vai <strong>apresentar o nome e a área das suas conexões</strong> para que vocês possam <strong>trocar mensagens, ideias, estratégias e conhecimentos</strong>. Assim, vocês podem <strong>alcançar seus objetivos juntos.</strong></p>
+        <p><strong><span class="highlight">Viu como é simples?</span></strong></p>
+        <p>Se seu olho também está brilhando, é só <strong><span class="highlight">clicar no botão abaixo</span></strong> e se cadastrar:</p>
+        <a href="#" class="button">QUERO ME CONECTAR!</a>
+    </div>
+
+    <div class="footer">
+        <p>Não precisa se preocupar...</p>
+        <p>A cada novo “match”, enviaremos um e-mail te avisando. Dessa forma, sua rede de desenvolvimento não vai parar de crescer.</p>
+        <p>Gostou da iniciativa?</p>
+        <p><a href="https://drive.google.com/file/d/1bEVd9xo4RDJXKNWzn7l32w_i0884iBUc/view?usp=drive_link" target="_blank">Clique aqui</a> e conta pra gente o que achou.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/instagram1.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/linkedin1.png" alt="LinkedIn"></a>
+        </div>
+        <p>Já acompanha a Cogna?</p>
+        <p>Escola de Riscos e Negócios, Jardim Heloisa Rua Árvore de Umbela, 08161-450, São Paulo, Brazil</p>
+        <p>Você pode <a href="https://app.getresponse.com/test_unsubscribe.html?x=a62b&c=OcGZL&u=CL5GV&z=EEGHMS&pt=unsubscribe" target="_blank">cancelar</a> ou <a href="https://app.getresponse.com/test_change_details.html?x=a62b&c=OcGZL&u=CL5GV&z=EIBlBUj&pt=change_details" target="_blank">alterar seus dados de contato</a> a qualquer momento.</p>
+        <p>Powered by: <a href="https://app.getresponse.com/referral.html?x=a62b&c=OcGZL&u=CL5GV&z=Et1X9cz&" target="_blank"><img src="https://app.getresponse.com/images/common/templates/badges/gr_logo_2.png" alt="GetResponse" width="120" height="24"></a></p>
+    </div>
 </body>
 </html>
