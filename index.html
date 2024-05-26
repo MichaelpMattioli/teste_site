@@ -3,34 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Nome do Amigo</title>
+    <title>Connect Cogna</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        header { text-align: center; margin-bottom: 20px; }
-        section { margin-bottom: 20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        header img {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .step {
+            background-color: white;
+            border: 2px solid #6a1b9a;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+        .step img {
+            width: 50px;
+            margin-right: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        @media (min-width: 600px) {
+            .steps {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .step {
+                width: calc(50% - 40px);
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Nome do Amigo</h1>
-        <p>Profissão ou Cargo Desejado</p>
+        <img src="https://via.placeholder.com/800x200" alt="Connect Cogna">
+        <h1>Connect Cogna</h1>
+        <p>A nova plataforma que vai conectar as grandes mentes da família Cogna.</p>
     </header>
-    <section>
-        <h2>Experiência</h2>
-        <p>Descreva aqui as experiências profissionais.</p>
-    </section>
-    <section>
-        <h2>Educação</h2>
-        <p>Descreva aqui as formações acadêmicas.</p>
-    </section>
-    <section>
-        <h2>Habilidades</h2>
-        <p>Liste aqui as habilidades e competências.</p>
-    </section>
-    <section>
-        <h2>Contato</h2>
-        <p>Email: exemplo@exemplo.com</p>
-        <p>Telefone: (xx) xxxxx-xxxx</p>
-    </section>
+    <div class="container">
+        <div class="highlight">
+            <p>Afinal, com match de objetivos, podemos ir mais longe!</p>
+        </div>
+        <h2>O que preciso fazer para me conectar?</h2>
+        <div class="steps">
+            <div class="step">
+                <img src="https://via.placeholder.com/50" alt="Cadastro">
+                <p>Realize seu cadastro, preenchendo os dados sobre o plano de Desenvolvimento Individual (PDI).</p>
+            </div>
+            <div class="step">
+                <img src="https://via.placeholder.com/50" alt="Validação">
+                <p>Validificaremos as pessoas que têm planos iguais ou alinhados aos objetivos da Cogna.</p>
+            </div>
+            <div class="step">
+                <img src="https://via.placeholder.com/50" alt="Identificação">
+                <p>Identificaremos as pessoas que têm planos iguais ou alinhados aos objetivos da Cogna.</p>
+            </div>
+            <div class="step">
+                <img src="https://via.placeholder.com/50" alt="Conexão">
+                <p>Oferecemos meios de interação para que todos possam alcançar esses objetivos juntos.</p>
+            </div>
+        </div>
+        <h2>Viu como é simples?</h2>
+    </div>
+    <footer>
+        <p>&copy; 2024 Connect Cogna. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
