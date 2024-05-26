@@ -18,7 +18,7 @@
         .header {
             background-color: #ffffff; /* Fundo branco para a primeira imagem */
             text-align: center;
-            padding: 20px;
+            /* padding: 20px; */
         }
         .header img {
             width: 100%;
@@ -29,17 +29,20 @@
             color: #ffffff;
             padding: 0px;
             text-align: left;
+            height : 415px;
             position: relative; /* Permitir posicionamento absoluto para a imagem */
         }
         .purple-box .highlight {
             color: #ffad01; /* Destaque em amarelo */
         }
-        .overlay-image {
+        .overlapping-image {
             position: absolute;
-            right: 20px;
-            bottom: 20px;
-            width: 150px; /* Tamanho da segunda imagem */
+            top: 200px; /* Ajuste conforme necessário para alinhar corretamente */
+            right: 0;
+            /* transform: translateX(-50%); */
+            width: 295px;
             height: auto;
+            z-index: 10; /* Certifique-se de que a imagem esteja sobreposta */
         }
         .content {
             background-color: #ffffff; /* Fundo branco para o restante do conteúdo */
@@ -75,6 +78,7 @@
             color: #8529ff;
             text-decoration: none;
         }
+        
     </style>
 </head>
 <body>
@@ -85,7 +89,7 @@
 
         <div class="purple-box">
             <!-- Parte 1 do purple-box -->
-            <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px">
+            <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px; position: relative;">
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#8529ff;background-color:#8529ff;width:100%">
                     <tbody>
                         <tr>
@@ -147,15 +151,88 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <!-- Parte 2 do purple-box -->
+                <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#8529ff;background-color:#8529ff;width:100%">
+                        <tbody>
+                            <tr>
+                                <td style="border-bottom:0 none #000000;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;direction:ltr;font-size:0px;padding:5px;text-align:center">
+                                    <div style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr">
+                                        <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="left" style="font-size:0px;padding:10px 10px 10px 35px;word-break:break-word">
+                                                                            <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.4;text-align:left;color:#000000">
+                                                                                <p style="font-family:Arial;font-size:14px;margin-top:0px;margin-bottom:0px;font-weight:normal;color:#000000">
+                                                                                    <span style="font-size:20px"><strong>
+                                                                                        <span style="font-family:Montserrat,Arial,sans-serif">
+                                                                                            <span style="color:#ffffff">Afinal, com </span>
+                                                                                            <span style="color:#ffad01">match de objetivos</span>
+                                                                                            <span style="color:#ffffff">, podemos ir mais longe!</span>
+                                                                                        </span></strong></span>
+                                                                                </p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td align="center" style="font-size:0px;padding:0;word-break:break-word">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td style="width:295px">
+                                                                                            <img alt="" src="segunda_imagem.png" style="border:0;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;border-bottom:0 none #000000;border-radius:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px" width="295" height="auto">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Imagem sobreposta -->
+                <img src="quarta_imagem.png" class="overlapping-image" alt="Sobreposta">
             </div>
-            
-            <!-- Parte 2 do purple-box -->
-            <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#8529ff;background-color:#8529ff;width:100%">
+        </div>
+
+        <div class="white-box">
+            <!-- Parte do white-box -->
+            <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%">
                     <tbody>
                         <tr>
                             <td style="border-bottom:0 none #000000;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;direction:ltr;font-size:0px;padding:5px;text-align:center">
-                                <div style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr">
+                                <div style="font-size:0px;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr">
                                     <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%">
                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                             <tbody>
@@ -164,14 +241,14 @@
                                                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td align="left" style="font-size:0px;padding:10px 10px 10px 35px;word-break:break-word">
+                                                                    <td align="left" style="font-size:0px;padding:35px 10px 10px 35px;word-break:break-word">
                                                                         <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.4;text-align:left;color:#000000">
                                                                             <p style="font-family:Arial;font-size:14px;margin-top:0px;margin-bottom:0px;font-weight:normal;color:#000000">
-                                                                                <span style="font-size:20px"><strong>
+                                                                                <span style="font-size:26px"><strong>
                                                                                     <span style="font-family:Montserrat,Arial,sans-serif">
-                                                                                        <span style="color:#ffffff">Afinal, com </span>
-                                                                                        <span style="color:#ffad01">match de objetivos</span>
-                                                                                        <span style="color:#ffffff">, podemos ir mais longe!</span>
+                                                                                        <span style="color:#ffad01">"</span>
+                                                                                        <span style="color:#32343a">O que preciso fazer para me conectar?</span>
+                                                                                        <span style="color:#ffad01">"</span>
                                                                                     </span></strong></span>
                                                                             </p>
                                                                         </div>
@@ -197,7 +274,7 @@
                                                                             <tbody>
                                                                                 <tr>
                                                                                     <td style="width:295px">
-                                                                                        <img alt="" src="segunda_imagem.png" style="border:0;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;border-bottom:0 none #000000;border-radius:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px" width="295" height="auto" class="CToWUd a6T" data-bit="iit" tabindex="0">
+                                                                                        <img alt="" src="terceira_imagem.png" style="border:0;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;border-bottom:0 none #000000;border-radius:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px" width="295" height="auto">
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -218,17 +295,6 @@
                 </table>
             </div>
         </div>
-
-        <div class="content">
-            <p>"O que preciso fazer para me conectar?"</p>
-            <p>Basta realizar o <strong>cadastro</strong> e compartilhar alguns dados através de um <strong>quiz sobre seu Plano de Desenvolvimento Individual (PDI)</strong>.</p>
-            <p>Nossa plataforma <strong>vai identificar as pessoas que têm planos iguais ou similares aos seus</strong>, considerando pessoas de <strong>todo o ecossistema Cogna</strong>.</p>
-            <p>Depois da busca, ela vai <strong>apresentar o nome e a área das suas conexões</strong> para que vocês possam <strong>trocar mensagens, ideias, estratégias e conhecimentos.</strong> Assim, vocês podem <strong>alcançar seus objetivos juntos.</strong></p>
-            <p><strong><span class="highlight">Viu como é simples?</span></strong></p>
-            <p>Se seu olho também está brilhando, é só <strong><span class="highlight">clicar no botão abaixo</span></strong> e se cadastrar:</p>
-            <a href="#" class="button">QUERO ME CONECTAR!</a>
-        </div>
-
         <div class="footer">
             <p>Não precisa se preocupar...</p>
             <p>A cada novo “match”, enviaremos um e-mail te avisando. Dessa forma, sua rede de desenvolvimento não vai parar de crescer.</p>
