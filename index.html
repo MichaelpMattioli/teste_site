@@ -5,26 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Replicado</title>
     <style>
-        /* Adicione aqui qualquer CSS embutido encontrado no email */
         body {
             font-family: Ubuntu, Helvetica, Arial, sans-serif;
             color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
         }
         .header {
-            background-color: #8529ff;
-            color: #ffffff;
-            padding: 10px;
+            background-color: #ffffff; /* Fundo branco para a primeira imagem */
+            text-align: center;
+            padding: 20px;
         }
-        .highlight {
-            color: #ffad01;
+        .header img {
+            width: 100%;
+            height: auto; /* Imagem responsiva para a primeira imagem */
+        }
+        .purple-box {
+            background-color: #8529ff; /* Fundo roxo para a seção de destaque */
+            color: #ffffff;
+            padding: 0px;
+            text-align: left;
+            position: relative; /* Permitir posicionamento absoluto para a imagem */
+        }
+        .purple-box .highlight {
+            color: #ffad01; /* Destaque em amarelo */
+        }
+        .overlay-image {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 150px; /* Tamanho da segunda imagem */
+            height: auto;
+        }
+        .content {
+            background-color: #ffffff; /* Fundo branco para o restante do conteúdo */
+            padding: 20px;
+            text-align: left;
         }
         .button {
-            background-color: #8529ff;
+            background-color: #8529ff; /* Botão roxo */
             color: #ffffff;
             border-radius: 999px;
             padding: 18px 44px;
             display: inline-block;
             text-decoration: none;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
         }
         .social-icons img {
             width: 40px;
@@ -32,42 +66,183 @@
             margin: 0 10px;
         }
         .footer {
-            background-color: #32343a;
+            background-color: #32343a; /* Fundo cinza escuro para o rodapé */
             color: #ffffff;
             padding: 20px;
             text-align: center;
         }
+        .footer a {
+            color: #8529ff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <p><strong><span class="highlight">A nova plataforma</span> que vai conectar as grandes mentes da família Cogna.</strong></p>
-        <p><strong><span class="highlight">Afinal, com match de objetivos, podemos ir mais longe!</span></strong></p>
-    </div>
-
-    <div>
-        <p>"O que preciso fazer para me conectar?"</p>
-        <p>Basta realizar o <strong>cadastro</strong> e compartilhar alguns dados através de um <strong>quiz sobre seu Plano de Desenvolvimento Individual (PDI)</strong>.</p>
-        <p>Nossa plataforma <strong>vai identificar as pessoas que têm planos iguais ou similares aos seus</strong>, considerando pessoas de <strong>todo o ecossistema Cogna</strong>.</p>
-        <p>Depois da busca, ela vai <strong>apresentar o nome e a área das suas conexões</strong> para que vocês possam <strong>trocar mensagens, ideias, estratégias e conhecimentos</strong>. Assim, vocês podem <strong>alcançar seus objetivos juntos.</strong></p>
-        <p><strong><span class="highlight">Viu como é simples?</span></strong></p>
-        <p>Se seu olho também está brilhando, é só <strong><span class="highlight">clicar no botão abaixo</span></strong> e se cadastrar:</p>
-        <a href="#" class="button">QUERO ME CONECTAR!</a>
-    </div>
-
-    <div class="footer">
-        <p>Não precisa se preocupar...</p>
-        <p>A cada novo “match”, enviaremos um e-mail te avisando. Dessa forma, sua rede de desenvolvimento não vai parar de crescer.</p>
-        <p>Gostou da iniciativa?</p>
-        <p><a href="https://drive.google.com/file/d/1bEVd9xo4RDJXKNWzn7l32w_i0884iBUc/view?usp=drive_link" target="_blank">Clique aqui</a> e conta pra gente o que achou.</p>
-        <div class="social-icons">
-            <a href="https://instagram.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/instagram1.png" alt="Instagram"></a>
-            <a href="https://linkedin.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/linkedin1.png" alt="LinkedIn"></a>
+    <div class="container">
+        <div class="header">
+            <img src="primeira_imagem.png" alt="Connect Cogna"> <!-- Primeira imagem -->
         </div>
-        <p>Já acompanha a Cogna?</p>
-        <p>Escola de Riscos e Negócios, Jardim Heloisa Rua Árvore de Umbela, 08161-450, São Paulo, Brazil</p>
-        <p>Você pode <a href="https://app.getresponse.com/test_unsubscribe.html?x=a62b&c=OcGZL&u=CL5GV&z=EEGHMS&pt=unsubscribe" target="_blank">cancelar</a> ou <a href="https://app.getresponse.com/test_change_details.html?x=a62b&c=OcGZL&u=CL5GV&z=EIBlBUj&pt=change_details" target="_blank">alterar seus dados de contato</a> a qualquer momento.</p>
-        <p>Powered by: <a href="https://app.getresponse.com/referral.html?x=a62b&c=OcGZL&u=CL5GV&z=Et1X9cz&" target="_blank"><img src="https://app.getresponse.com/images/common/templates/badges/gr_logo_2.png" alt="GetResponse" width="120" height="24"></a></p>
+
+        <div class="purple-box">
+            <!-- Parte 1 do purple-box -->
+            <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#8529ff;background-color:#8529ff;width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="border-bottom:0 none #000000;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;direction:ltr;font-size:0px;padding:5px;text-align:center">
+                                <div style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr">
+                                    <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:67%">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" style="font-size:0px;padding:35px 10px 10px 35px;word-break:break-word">
+                                                                        <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.4;text-align:left;color:#000000">
+                                                                            <p style="font-family:Arial;font-size:14px;margin-top:0px;margin-bottom:0px;font-weight:normal;color:#000000">
+                                                                                <span style="font-size:32px"><strong>
+                                                                                    <span style="font-family:Montserrat,Arial,sans-serif">
+                                                                                        <span style="color:#ffffff">A </span>
+                                                                                        <span style="color:#ffad01">nova plataforma</span>
+                                                                                        <span style="color:#ffffff">&nbsp;que vai </span>
+                                                                                        <span style="color:#ffad01">conectar</span>
+                                                                                        <span style="color:#ffffff">&nbsp;as </span>
+                                                                                        <span style="color:#ffad01">grandes mentes</span>
+                                                                                        <span style="color:#ffffff">&nbsp;da família Cogna.</span>
+                                                                                    </span></strong></span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="font-size:0px;word-break:break-word">
+                                                                        <div style="height:20px;line-height:20px"> </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Parte 2 do purple-box -->
+            <div style="background:#8529ff;background-color:#8529ff;margin:0px auto;max-width:600px">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#8529ff;background-color:#8529ff;width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="border-bottom:0 none #000000;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;direction:ltr;font-size:0px;padding:5px;text-align:center">
+                                <div style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr">
+                                    <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="left" style="font-size:0px;padding:10px 10px 10px 35px;word-break:break-word">
+                                                                        <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.4;text-align:left;color:#000000">
+                                                                            <p style="font-family:Arial;font-size:14px;margin-top:0px;margin-bottom:0px;font-weight:normal;color:#000000">
+                                                                                <span style="font-size:20px"><strong>
+                                                                                    <span style="font-family:Montserrat,Arial,sans-serif">
+                                                                                        <span style="color:#ffffff">Afinal, com </span>
+                                                                                        <span style="color:#ffad01">match de objetivos</span>
+                                                                                        <span style="color:#ffffff">, podemos ir mais longe!</span>
+                                                                                    </span></strong></span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:50%">
+                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="background-color:transparent;border-bottom:none;border-left:none;border-right:none;border-top:none;vertical-align:top;padding:0">
+                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td align="center" style="font-size:0px;padding:0;word-break:break-word">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width:295px">
+                                                                                        <img alt="" src="segunda_imagem.png" style="border:0;border-left:0 none #000000;border-right:0 none #000000;border-top:0 none #000000;border-bottom:0 none #000000;border-radius:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px" width="295" height="auto" class="CToWUd a6T" data-bit="iit" tabindex="0">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>"O que preciso fazer para me conectar?"</p>
+            <p>Basta realizar o <strong>cadastro</strong> e compartilhar alguns dados através de um <strong>quiz sobre seu Plano de Desenvolvimento Individual (PDI)</strong>.</p>
+            <p>Nossa plataforma <strong>vai identificar as pessoas que têm planos iguais ou similares aos seus</strong>, considerando pessoas de <strong>todo o ecossistema Cogna</strong>.</p>
+            <p>Depois da busca, ela vai <strong>apresentar o nome e a área das suas conexões</strong> para que vocês possam <strong>trocar mensagens, ideias, estratégias e conhecimentos.</strong> Assim, vocês podem <strong>alcançar seus objetivos juntos.</strong></p>
+            <p><strong><span class="highlight">Viu como é simples?</span></strong></p>
+            <p>Se seu olho também está brilhando, é só <strong><span class="highlight">clicar no botão abaixo</span></strong> e se cadastrar:</p>
+            <a href="#" class="button">QUERO ME CONECTAR!</a>
+        </div>
+
+        <div class="footer">
+            <p>Não precisa se preocupar...</p>
+            <p>A cada novo “match”, enviaremos um e-mail te avisando. Dessa forma, sua rede de desenvolvimento não vai parar de crescer.</p>
+            <p>Gostou da iniciativa?</p>
+            <p><a href="https://drive.google.com/file/d/1bEVd9xo4RDJXKNWzn7l32w_i0884iBUc/view?usp=drive_link" target="_blank">Clique aqui</a> e conta pra gente o que achou.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/instagram1.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="https://us-as.gr-cdn.com/images/common/templates/messages/v2/social/linkedin1.png" alt="LinkedIn"></a>
+            </div>
+            <p>Já acompanha a Cogna?</p>
+            <p>Escola de Riscos e Negócios, Jardim Heloisa Rua Árvore de Umbela, 08161-450, São Paulo, Brazil</p>
+            <p>Você pode <a href="https://app.getresponse.com/test_unsubscribe.html?x=a62b&amp;c=OcGZL&amp;u=CL5GV&amp;z=EEGHMS&amp;pt=unsubscribe" target="_blank">cancelar</a> ou <a href="https://app.getresponse.com/test_change_details.html?x=a62b&amp;c=OcGZL&amp;u=CL5GV&amp;z=EIBlBUj&amp;pt=change_details" target="_blank">alterar seus dados de contato</a> a qualquer momento.</p>
+            <p>Powered by: <a href="https://app.getresponse.com/referral.html?x=a62b&amp;c=OcGZL&amp;u=CL5GV&amp;z=Et1X9cz&amp;" target="_blank"><img src="https://app.getresponse.com/images/common/templates/badges/gr_logo_2.png" alt="GetResponse" width="120" height="24"></a></p>
+        </div>
     </div>
 </body>
 </html>
