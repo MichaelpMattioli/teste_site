@@ -113,13 +113,12 @@
     color: #ffad01;
     font-weight: bold;
     font-size: 48px;
-    margin: 0px;
-    padding: 0px;
     line-height: 0; /* Ajuste este valor conforme necessário */
 }
 
 .main-text {
     color: #32343a;
+    font-size: 29px;
 }
 
 .white-box-placeholder {
