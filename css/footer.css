@@ -1,3 +1,21 @@
+/* Definindo fontes personalizadas */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-BOLD.TTF') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-SEMIBOLD.TTF') format('truetype');
+    font-weight: 600;
+}
+
 /* Footer Box */
 .footer-box {
     background: #ffffff;

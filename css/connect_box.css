@@ -1,3 +1,21 @@
+/* Definindo fontes personalizadas */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-BOLD.TTF') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-SEMIBOLD.TTF') format('truetype');
+    font-weight: 600;
+}
+
 /* Connect Box */
 .connect-box {
     background: #32343a;
@@ -21,8 +39,6 @@
 .connect-right {
     flex: 1;
     text-align: left;
-    /* padding-left: 80px; */
-    /* margin-left: 50px; */
     
 }
 
@@ -34,14 +50,16 @@
 
 .connect-text {
     margin: 0px 50px;
-
+    font-family: 'Montserrat';
     padding: auto;
+    font-size: 16px;
 }
 
 .connect-text a {
     font-size: 16px;
     color: #8529ff;
     text-decoration: none;
+    line-height: 0.5; /* Ajuste este valor conforme necessário */
 }
 
 .connect-text-highlight {
@@ -51,6 +69,7 @@
 }
 
 .spaced-link {
+    font-family: 'Montserrat';
     margin-top: 20px; /* Ajuste este valor conforme necessário */
     display: inline-block; /* Necessário para aplicar a margem superior */
 }

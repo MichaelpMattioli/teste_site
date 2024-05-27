@@ -1,3 +1,21 @@
+/* Definindo fontes personalizadas */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-BOLD.TTF') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/MONTSERRAT-SEMIBOLD.TTF') format('truetype');
+    font-weight: 600;
+}
+
 .white-box2-container {
     background: #ffffff;
     background-color: #ffffff;
@@ -47,7 +65,7 @@
     border-right: none;
     border-top: none;
     vertical-align: top;
-    padding: 0px 120px 0px 0px;
+    padding: 0px 100px 0px 0px;
     width: 60%; /* Ajuste a largura conforme necessário */
 }
 
@@ -61,7 +79,7 @@
 }
 
 .white-box2-main-text {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat';
     font-size: 26px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -70,7 +88,7 @@
 }
 
 .white-box2-sub-text {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat';
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -106,11 +124,10 @@
     background: #ffffff;
     text-align: center;
     padding: 20px 0;
-    font: 24px Arial, sans-serif;
 }
 
 .cta-button {
-    
+    font-family: 'Montserrat';
     background: #8529ff;
     color: #ffffff;
     border: none;
